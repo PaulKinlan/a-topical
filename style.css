@@ -1,0 +1,110 @@
+h1
+{
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+h2
+{
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+
+p
+{
+    margin-bottom: 5px;    
+}
+
+.result
+{
+    font-size: 1em;
+}
+
+.header p
+{
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.content
+{
+    text-align: left;
+    
+}
+
+input
+{
+    font-size: 1.5em;
+}
+
+label
+{
+    font-size: 1.5em;	
+}
+
+.title
+{
+	
+}
+
+.content
+{
+    clear: both;
+}
+
+.result h1
+{
+    background-color: #2179c6;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.result h1 a:link
+{
+    color: white;
+
+}
+
+.footer
+{
+    clear: both;
+    border-top: 10px solid #d61d00;
+}
+
+.popular
+{
+    text-align: left;
+}
+
+.style1
+{
+	border-top: 10px solid #d61d00;
+	background-color: white;
+}
+
+.style2
+{
+	border-top: 10px solid #0061a6;
+	background-color: white;
+}
+
+.style3
+{
+	border-top: 10px solid #008000;
+	background-color: white;
+}
+
+.style4
+{
+	border-top: 10px solid #99cc33;
+	background-color: white;
+}
+
+.style5
+{
+	border-top: 10px solid #ffd200;
+	background-color: white;
+}

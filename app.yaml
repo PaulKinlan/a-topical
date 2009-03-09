@@ -1,0 +1,32 @@
+application: purple-weasel
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+- url: /style.css
+  static_files: style.css
+  upload: style.css
+- url: /reset.css
+  static_files: reset.css
+  upload: reset.css
+- url: /960.css
+  static_files: 960.css
+  upload: 960.css
+- url: /atopical.png
+  static_files: atopical.png
+  upload: atopical.png
+- url: /text.css
+  static_files: text.css
+  upload: text.css
+- url: /_popular/\d*
+  login: admin
+  script: TopicSearch.py
+- url: .*
+  script: TopicSearch.py

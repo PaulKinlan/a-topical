@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>{{ user }}</title>
+</head>
+<body>
+    <form method="post" action="/_popular/{{ page }}">
+    <ul>
+    {% for item in items %}
+    <li>{{ item.topic }}
+    <select name="{{ item.topic }}">
+        <option value="Safe">Safe</option>
+        <option selected="true" value="Unclassified">Unclassified</option>
+        <option value="Hate">Hate</option>
+        <option value="Porn">Porn</option>
+        <option value="Spam">Spam</option>
+        <option value="Gambling">Gambling</option>
+        <option value="Hacking">Hacking</option>
+        <option value="Drugs">Drugs</option>
+        <option value="Pharma">Pharma</option>
+    </select></li>
+    {% endfor %}
+    </ul>
+    <input type="submit" />
+    </form>
+</body>
+</html>

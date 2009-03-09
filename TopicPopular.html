@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>All the Popular Topical Seaches</title>    
+    <link rel="stylesheet" type="text/css" href="/reset.css">
+    <link rel="stylesheet" type="text/css" href="/960.css">
+    <link rel="stylesheet" type="text/css" href="/text.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+</head>
+<body style="text-align:center">
+    <div class="container_12">
+        <div class="grid_12">
+            <img src="/atopical.png" />
+        </div>
+        <div class="grid_12">
+            <p>
+                <span>A Topical Search Engine</span> is a dynamic vertical search engine that helps you find what you are looking for.
+            </p>
+            <form method="get" action="/query">	
+                <div class="grid_5 alpha" style="text-align: right;">
+                        <label for="topic">Search for</label>
+                        <input type="text" name="topic" value="" tabindex="1" />
+                        <p>eg. <a href="/XBox 360">XBox 360</a></p>
+                        <p>eg. <a href="/Ipod">Ipod</a></p>
+                        <p>eg. <a href="/Barack Obama">Barack Obama</a></p>
+                        <p>eg. <a href="/Kerry Katona">Kerry Katona</a></p>
+                </div>
+                <div class="grid_2" style="text-align: center;">
+                        <label for="subject">in</label>				
+                </div>
+                <div class="grid_5 omega" style="text-align: left;">					
+                        <input type="text" name="subject" value="" tabindex="2" />
+                        <input type="submit" value="Search" />
+                        <p><i>You can leave this blank if you want!</i></p>
+                        <p><a href="/Ipod/Tech News">Tech News</a></p>
+                        <p><a href="/Barack Obama/International Politics">International Politics</a></p>
+                        <p><a href="/Kerry Katona/UK Entertainment News">UK Entertainment News</a></p>
+                </div>
+            </form>
+        </div>    
+        <div class="popular style2 grid_12">
+            <h1>Popular Topics</h1>
+            <ul>
+                {% for url in items %}
+                <li><a href="http://www.atopical.com/{{url.topic}}">{{url.topic}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="grid_12 footer">
+            <p><a href="http://www.atopical.com/">A Topical Search Engine</a> is developed and wholey owned by <a href="http://www.topicala.com/">Topicala Ltd</a>.  By using this site you agree to the terms and conditions set out in our <a href="http://www.topicala.com/about.shtml">Privacy Policy</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
